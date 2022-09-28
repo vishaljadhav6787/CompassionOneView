@@ -19,21 +19,12 @@ public class CompassionOneViewLogin extends BaseClass{
 	        By bySignInButton = By.id("login");
 	        
 
-	        Utilities.hardWait(5);
+	        Utilities.hardWait(3);
 	        driver.findElement(byUsername).sendKeys(username);
 	        driver.findElement(byPassword).sendKeys(password);
 	        
 	        Utilities.hardWait(3);
 	        driver.findElement(bySignInButton).click();
-	        
-	        driver.getTitle();
-	        
-	        
-	        
-	        
-	        
-	        
-	        
 
 	        System.out.println(">>>>>>>> END - CompassionWebsiteLogin <<<<<<<<<<<<<<<<<<<<");
 	

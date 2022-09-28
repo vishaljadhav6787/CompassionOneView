@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-27T22:22:50 IST" name="Default suite" finished-at="2022-09-27T22:23:12 IST" duration-ms="21285">
+  <suite started-at="2022-09-28T11:07:04 IST" name="Default suite" finished-at="2022-09-28T11:08:20 IST" duration-ms="75367">
     <groups>
     </groups>
-    <test started-at="2022-09-27T22:22:50 IST" name="Default test" finished-at="2022-09-27T22:23:12 IST" duration-ms="21285">
-      <class name="Com.CompassionOneView.testCases.CompassionOneViewLogin">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Com.CompassionOneView.testCases.CompassionOneViewLogin@3349e9bb]" started-at="2022-09-27T22:22:50 IST" name="setup" finished-at="2022-09-27T22:22:58 IST" duration-ms="7307" status="PASS">
+    <test started-at="2022-09-28T11:07:04 IST" name="Default test" finished-at="2022-09-28T11:08:20 IST" duration-ms="75367">
+      <class name="Com.CompassionOneView.testCases.CompassionOneViewNewRegistration">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Com.CompassionOneView.testCases.CompassionOneViewNewRegistration@3349e9bb]" started-at="2022-09-28T11:07:04 IST" name="setup" finished-at="2022-09-28T11:07:09 IST" duration-ms="4325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:Com.CompassionOneView.testCases.CompassionOneViewLogin@3349e9bb]" started-at="2022-09-27T22:22:58 IST" name="loginTest" finished-at="2022-09-27T22:23:06 IST" duration-ms="8385" status="PASS">
+        <test-method signature="newRegistration()[pri:0, instance:Com.CompassionOneView.testCases.CompassionOneViewNewRegistration@3349e9bb]" started-at="2022-09-28T11:07:09 IST" name="newRegistration" finished-at="2022-09-28T11:08:14 IST" duration-ms="65492" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Com.CompassionOneView.testCases.CompassionOneViewLogin@3349e9bb]" started-at="2022-09-27T22:23:06 IST" name="tearDown" finished-at="2022-09-27T22:23:12 IST" duration-ms="5531" status="PASS">
+        </test-method> <!-- newRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Com.CompassionOneView.testCases.CompassionOneViewNewRegistration@3349e9bb]" started-at="2022-09-28T11:08:14 IST" name="tearDown" finished-at="2022-09-28T11:08:20 IST" duration-ms="5506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Com.CompassionOneView.testCases.CompassionOneViewLogin -->
+      </class> <!-- Com.CompassionOneView.testCases.CompassionOneViewNewRegistration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

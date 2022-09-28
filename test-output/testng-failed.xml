@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.CompassionOneView.testCases.CompassionOneViewLogin">
+      <class name="Com.CompassionOneView.testCases.CompassionOneViewNewRegistration">
         <methods>
           <include name="tearDown"/>
-          <include name="loginTest"/>
+          <include name="newRegistration"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Com.CompassionOneView.testCases.CompassionOneViewLogin -->
+      </class> <!-- Com.CompassionOneView.testCases.CompassionOneViewNewRegistration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
