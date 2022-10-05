@@ -36,7 +36,7 @@ public class BaseClass {
 
 //		To Handle Chrome Browser Crashes in server
 			options.addArguments("--no-sandbox");
-//			options.addArguments("--headless"); //should be enabled for Jenkins
+			options.addArguments("--headless"); //should be enabled for Jenkins
 			options.addArguments("--disable-dev-shm-usage"); //should be enabled for Jenkins
 			options.addArguments("--window-size=1920x1080"); //should be enabled for Jenkinss
 //			System.out.println("Baseclass:35" + Objects.isNull(driver));
