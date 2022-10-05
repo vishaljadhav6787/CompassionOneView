@@ -1,25 +1,399 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[************************ Browser Session Started ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session End ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session Started ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session End ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session Started ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session End ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session Started ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session End ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session Started ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session End ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session Started ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session End ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session Started ************************]]>
+    </line>
+    <line>
+      <![CDATA[************************ Browser Session End ************************]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-09-28T11:07:04 IST" name="Default suite" finished-at="2022-09-28T11:08:20 IST" duration-ms="75367">
+  <suite started-at="2022-10-05T13:03:55 IST" name="Suite" finished-at="2022-10-05T13:14:53 IST" duration-ms="657655">
     <groups>
+      <group name="All">
+        <method signature="CompassionOneViewChangeAddress.changeAddress(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAddress@1f2586d6]" name="changeAddress" class="org.CompassionOneView.testCases.CompassionOneViewChangeAddress"/>
+        <method signature="CompassionOneViewChangeAll.changeAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAll@5aa9e4eb]" name="changeAll" class="org.CompassionOneView.testCases.CompassionOneViewChangeAll"/>
+        <method signature="CompassionOneViewChangeEmail.changeEmail(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeEmail@3fc2959f]" name="changeEmail" class="org.CompassionOneView.testCases.CompassionOneViewChangeEmail"/>
+        <method signature="CompassionOneViewChangeName.changeName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeName@2f4948e4]" name="changeName" class="org.CompassionOneView.testCases.CompassionOneViewChangeName"/>
+        <method signature="CompassionOneViewChangePhone.changePhone(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangePhone@10683d9d]" name="changePhone" class="org.CompassionOneView.testCases.CompassionOneViewChangePhone"/>
+        <method signature="CompassionOneViewLogin.loginTest(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@30c15d8b]" name="loginTest" class="org.CompassionOneView.testCases.CompassionOneViewLogin"/>
+        <method signature="CompassionOneViewNewRegistration.newRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewNewRegistration@6a78afa0]" name="newRegistration" class="org.CompassionOneView.testCases.CompassionOneViewNewRegistration"/>
+      </group> <!-- All -->
+      <group name="ChangeEmail">
+        <method signature="CompassionOneViewChangeEmail.changeEmail(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeEmail@3fc2959f]" name="changeEmail" class="org.CompassionOneView.testCases.CompassionOneViewChangeEmail"/>
+      </group> <!-- ChangeEmail -->
+      <group name="ChangeName">
+        <method signature="CompassionOneViewChangeName.changeName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeName@2f4948e4]" name="changeName" class="org.CompassionOneView.testCases.CompassionOneViewChangeName"/>
+      </group> <!-- ChangeName -->
+      <group name="Login">
+        <method signature="CompassionOneViewLogin.loginTest(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@30c15d8b]" name="loginTest" class="org.CompassionOneView.testCases.CompassionOneViewLogin"/>
+      </group> <!-- Login -->
+      <group name="ChangePhone">
+        <method signature="CompassionOneViewChangePhone.changePhone(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangePhone@10683d9d]" name="changePhone" class="org.CompassionOneView.testCases.CompassionOneViewChangePhone"/>
+      </group> <!-- ChangePhone -->
+      <group name="ChangeAll">
+        <method signature="CompassionOneViewChangeAll.changeAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAll@5aa9e4eb]" name="changeAll" class="org.CompassionOneView.testCases.CompassionOneViewChangeAll"/>
+      </group> <!-- ChangeAll -->
+      <group name="ChangeAddress">
+        <method signature="CompassionOneViewChangeAddress.changeAddress(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAddress@1f2586d6]" name="changeAddress" class="org.CompassionOneView.testCases.CompassionOneViewChangeAddress"/>
+        <method signature="CompassionOneViewNewRegistration.newRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewNewRegistration@6a78afa0]" name="newRegistration" class="org.CompassionOneView.testCases.CompassionOneViewNewRegistration"/>
+      </group> <!-- ChangeAddress -->
     </groups>
-    <test started-at="2022-09-28T11:07:04 IST" name="Default test" finished-at="2022-09-28T11:08:20 IST" duration-ms="75367">
-      <class name="Com.CompassionOneView.testCases.CompassionOneViewNewRegistration">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Com.CompassionOneView.testCases.CompassionOneViewNewRegistration@3349e9bb]" started-at="2022-09-28T11:07:04 IST" name="setup" finished-at="2022-09-28T11:07:09 IST" duration-ms="4325" status="PASS">
+    <test started-at="2022-10-05T13:03:55 IST" name="Test" finished-at="2022-10-05T13:14:53 IST" duration-ms="657655">
+      <class name="org.CompassionOneView.testCases.CompassionOneViewChangeAddress">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAddress@1f2586d6]" started-at="2022-10-05T13:07:23 IST" name="setup" finished-at="2022-10-05T13:07:27 IST" duration-ms="3518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session Started ************************]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="newRegistration()[pri:0, instance:Com.CompassionOneView.testCases.CompassionOneViewNewRegistration@3349e9bb]" started-at="2022-09-28T11:07:09 IST" name="newRegistration" finished-at="2022-09-28T11:08:14 IST" duration-ms="65492" status="PASS">
+        <test-method signature="changeAddress(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAddress@1f2586d6]" started-at="2022-10-05T13:07:27 IST" name="changeAddress" finished-at="2022-10-05T13:08:55 IST" duration-ms="87961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GC_4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[G33con0404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAddress@1f2586d6]" started-at="2022-10-05T13:08:55 IST" name="tearDown" finished-at="2022-10-05T13:09:00 IST" duration-ms="5546" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session End ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.CompassionOneView.testCases.CompassionOneViewChangeAddress -->
+      <class name="org.CompassionOneView.testCases.CompassionOneViewLogin">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@30c15d8b]" started-at="2022-10-05T13:03:55 IST" name="setup" finished-at="2022-10-05T13:04:05 IST" duration-ms="9886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session Started ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@30c15d8b]" started-at="2022-10-05T13:04:05 IST" name="loginTest" finished-at="2022-10-05T13:04:11 IST" duration-ms="6295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GC_4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[G33con0404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@30c15d8b]" started-at="2022-10-05T13:04:11 IST" name="tearDown" finished-at="2022-10-05T13:04:17 IST" duration-ms="5448" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session End ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.CompassionOneView.testCases.CompassionOneViewLogin -->
+      <class name="org.CompassionOneView.testCases.CompassionOneViewChangeName">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeName@2f4948e4]" started-at="2022-10-05T13:05:53 IST" name="setup" finished-at="2022-10-05T13:05:57 IST" duration-ms="4013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session Started ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="changeName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeName@2f4948e4]" started-at="2022-10-05T13:05:57 IST" name="changeName" finished-at="2022-10-05T13:07:18 IST" duration-ms="80283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GC_4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[G33con0404]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Jackson]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeName@2f4948e4]" started-at="2022-10-05T13:07:18 IST" name="tearDown" finished-at="2022-10-05T13:07:23 IST" duration-ms="5469" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session End ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.CompassionOneView.testCases.CompassionOneViewChangeName -->
+      <class name="org.CompassionOneView.testCases.CompassionOneViewChangePhone">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangePhone@10683d9d]" started-at="2022-10-05T13:09:00 IST" name="setup" finished-at="2022-10-05T13:09:04 IST" duration-ms="3653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session Started ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="changePhone(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangePhone@10683d9d]" started-at="2022-10-05T13:09:04 IST" name="changePhone" finished-at="2022-10-05T13:10:19 IST" duration-ms="75459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GC_4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[G33con0404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePhone -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangePhone@10683d9d]" started-at="2022-10-05T13:10:19 IST" name="tearDown" finished-at="2022-10-05T13:10:25 IST" duration-ms="5567" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session End ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.CompassionOneView.testCases.CompassionOneViewChangePhone -->
+      <class name="org.CompassionOneView.testCases.CompassionOneViewNewRegistration">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewNewRegistration@6a78afa0]" started-at="2022-10-05T13:04:17 IST" name="setup" finished-at="2022-10-05T13:04:21 IST" duration-ms="3797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session Started ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="newRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewNewRegistration@6a78afa0]" started-at="2022-10-05T13:04:21 IST" name="newRegistration" finished-at="2022-10-05T13:05:48 IST" duration-ms="87490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GC_4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[G33con0404]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Jackson]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[jackson123@gmail.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Com.CompassionOneView.testCases.CompassionOneViewNewRegistration@3349e9bb]" started-at="2022-09-28T11:08:14 IST" name="tearDown" finished-at="2022-09-28T11:08:20 IST" duration-ms="5506" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewNewRegistration@6a78afa0]" started-at="2022-10-05T13:05:48 IST" name="tearDown" finished-at="2022-10-05T13:05:53 IST" duration-ms="5428" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session End ************************]]>
+            </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Com.CompassionOneView.testCases.CompassionOneViewNewRegistration -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- org.CompassionOneView.testCases.CompassionOneViewNewRegistration -->
+      <class name="org.CompassionOneView.testCases.CompassionOneViewChangeAll">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAll@5aa9e4eb]" started-at="2022-10-05T13:11:51 IST" name="setup" finished-at="2022-10-05T13:12:05 IST" duration-ms="13968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session Started ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="changeAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAll@5aa9e4eb]" started-at="2022-10-05T13:12:05 IST" name="changeAll" finished-at="2022-10-05T13:14:47 IST" duration-ms="161940" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GC_4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[G33con0404]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bettieheron1@gmail.com.invalid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Jackson]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeAll -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAll@5aa9e4eb]" started-at="2022-10-05T13:14:47 IST" name="tearDown" finished-at="2022-10-05T13:14:53 IST" duration-ms="5858" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session End ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.CompassionOneView.testCases.CompassionOneViewChangeAll -->
+      <class name="org.CompassionOneView.testCases.CompassionOneViewChangeEmail">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeEmail@3fc2959f]" started-at="2022-10-05T13:10:25 IST" name="setup" finished-at="2022-10-05T13:10:33 IST" duration-ms="7838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session Started ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="changeEmail(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeEmail@3fc2959f]" started-at="2022-10-05T13:10:33 IST" name="changeEmail" finished-at="2022-10-05T13:11:45 IST" duration-ms="72526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GC_4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[G33con0404]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bettieheron1@gmail.com.invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeEmail@3fc2959f]" started-at="2022-10-05T13:11:45 IST" name="tearDown" finished-at="2022-10-05T13:11:51 IST" duration-ms="5634" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session End ************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.CompassionOneView.testCases.CompassionOneViewChangeEmail -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

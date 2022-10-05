@@ -1,16 +1,18 @@
-package Com.CompassionOneView.testCases;
+package org.CompassionOneView.testCases;
 
 import org.compassion.utilities.Utilities;
 import org.openqa.selenium.By;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class CompassionOneViewLogin extends BaseClass{
 	
-	public String username="GC_4";
-	public String password="G33con0404";
-	@Test
-	public void loginTest() {
 		
+	@Parameters({"username","password"})
+	@Test (groups = {"All","Login"})
+	public void loginTest(@Optional("GC_4") String username, @Optional("G33con0404") String password) {
+		try {
 		   System.out.println(">>>>>>>>>>>>>> START - CompassionWebsiteLogin <<<<<<<<<<<<<<<<<<<<");
 	        
 
@@ -27,9 +29,12 @@ public class CompassionOneViewLogin extends BaseClass{
 	        driver.findElement(bySignInButton).click();
 
 	        System.out.println(">>>>>>>> END - CompassionWebsiteLogin <<<<<<<<<<<<<<<<<<<<");
+		}   catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	
-	
+		}
 	}
-}
+	}
 	 
 
