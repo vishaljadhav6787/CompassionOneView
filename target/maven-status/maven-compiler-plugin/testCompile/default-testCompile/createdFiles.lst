@@ -1,0 +1,10 @@
+org\CompassionOneView\testCases\CompassionOneViewChangeAddress.class
+org\CompassionOneView\testCases\CompassionOneViewChangeName.class
+org\compassion\config\PropertiesFile.class
+org\CompassionOneView\testCases\CompassionOneViewChangeEmail.class
+org\CompassionOneView\testCases\CompassionOneViewLogin.class
+org\CompassionOneView\testCases\BaseClass.class
+org\CompassionOneView\testCases\CompassionOneViewChangeAll.class
+org\CompassionOneView\testCases\CompassionOneViewNewRegistration.class
+org\compassion\utilities\Utilities.class
+org\CompassionOneView\testCases\CompassionOneViewChangePhone.class
