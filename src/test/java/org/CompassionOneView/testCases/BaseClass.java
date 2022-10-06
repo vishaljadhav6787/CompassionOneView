@@ -1,6 +1,7 @@
 package org.CompassionOneView.testCases;
 
 import java.time.Duration;
+import java.util.Objects;
 
 import org.compassion.config.PropertiesFile;
 import org.compassion.utilities.Utilities;
@@ -26,7 +27,7 @@ public class BaseClass {
 	public static String dev;
 	
 	@Parameters({"env"})
-	@BeforeMethod(groups = {"All", "Login", "NewRegistration"})
+	@BeforeMethod(groups = {"All", "Login", "NewRegistration","ChangeAddress","ChangeAll","ChangeEmail","ChangeName","ChangePhone"})
 	public void setup (@Optional("dev") String env) {
 		try {
 			
@@ -39,9 +40,9 @@ public class BaseClass {
 			options.addArguments("--headless"); //should be enabled for Jenkins
 			options.addArguments("--disable-dev-shm-usage"); //should be enabled for Jenkins
 			options.addArguments("--window-size=1920x1080"); //should be enabled for Jenkinss
-//			System.out.println("Baseclass:35" + Objects.isNull(driver));
+			System.out.println("Baseclass:35" + Objects.isNull(driver));
 			driver = new ChromeDriver(options);
-//			System.out.println("Baseclass:38" + Objects.isNull(driver));
+			System.out.println("Baseclass:38" + Objects.isNull(driver));
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 			wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			driver.manage().window().maximize();
@@ -59,7 +60,7 @@ public class BaseClass {
 	}
     	
 	}
-	@AfterMethod(groups = {"All", "Login", "NewRegistration"})
+	@AfterMethod(groups = {"All", "Login", "NewRegistration","ChangeAddress","ChangeAll","ChangeEmail","ChangeName","ChangePhone"})
 	
 	public void tearDown() {
 	    Utilities.hardWait(5);
