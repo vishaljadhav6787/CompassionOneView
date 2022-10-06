@@ -34,7 +34,7 @@ public class BaseClass {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 
-//		To Handle Chrome Browser Crashes in server
+//		  To Handle Chrome Browser Crashes in server
 			options.addArguments("--no-sandbox");
 			options.addArguments("--headless"); //should be enabled for Jenkins
 			options.addArguments("--disable-dev-shm-usage"); //should be enabled for Jenkins
