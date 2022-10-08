@@ -4,19 +4,22 @@
     <line>
       <![CDATA[************************ Browser Session Started ************************]]>
     </line>
+    <line>
+      <![CDATA[************************ Browser Session End ************************]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-10-07T19:04:40 IST" name="Default suite" finished-at="2022-10-07T19:08:57 IST" duration-ms="256929">
+  <suite started-at="2022-10-08T19:23:07 IST" name="Default suite" finished-at="2022-10-08T19:23:28 IST" duration-ms="21080">
     <groups>
       <group name="All">
-        <method signature="CompassionOneViewChangeAll.changeAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAll@4c583ecf]" name="changeAll" class="org.CompassionOneView.testCases.CompassionOneViewChangeAll"/>
+        <method signature="CompassionOneViewLogin.loginTest(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" name="loginTest" class="org.CompassionOneView.testCases.CompassionOneViewLogin"/>
       </group> <!-- All -->
-      <group name="ChangeAll">
-        <method signature="CompassionOneViewChangeAll.changeAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAll@4c583ecf]" name="changeAll" class="org.CompassionOneView.testCases.CompassionOneViewChangeAll"/>
-      </group> <!-- ChangeAll -->
+      <group name="Login">
+        <method signature="CompassionOneViewLogin.loginTest(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" name="loginTest" class="org.CompassionOneView.testCases.CompassionOneViewLogin"/>
+      </group> <!-- Login -->
     </groups>
-    <test started-at="2022-10-07T19:04:40 IST" name="Default test" finished-at="2022-10-07T19:08:57 IST" duration-ms="256929">
-      <class name="org.CompassionOneView.testCases.CompassionOneViewChangeAll">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAll@4c583ecf]" started-at="2022-10-07T19:04:42 IST" name="setup" finished-at="2022-10-07T19:05:26 IST" duration-ms="43362" status="PASS">
+    <test started-at="2022-10-08T19:23:07 IST" name="Default test" finished-at="2022-10-08T19:23:28 IST" duration-ms="21080">
+      <class name="org.CompassionOneView.testCases.CompassionOneViewLogin">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" started-at="2022-10-08T19:23:07 IST" name="setup" finished-at="2022-10-08T19:23:16 IST" duration-ms="9718" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +33,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="changeAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAll@4c583ecf]" started-at="2022-10-07T19:05:26 IST" name="changeAll" finished-at="2022-10-07T19:08:27 IST" duration-ms="181205" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" started-at="2022-10-08T19:23:16 IST" name="loginTest" finished-at="2022-10-08T19:23:23 IST" duration-ms="6169" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,115 +45,18 @@
                 <![CDATA[G33con0404]]>
               </value>
             </param>
-            <param index="2">
-              <value>
-                <![CDATA[jackson123@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[David]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Jackson]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[709401]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changeAll -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewChangeAll@4c583ecf]" started-at="2022-10-07T19:08:27 IST" name="tearDown" finished-at="2022-10-07T19:08:57 IST" duration-ms="30390" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to stop.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'VISHAL', ip: '192.168.150.100', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cca5f2c84ea5e0d395cbf859528fbe23, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\visha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63782/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cca5f2c84ea5e0d395cbf859528fbe23]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'VISHAL', ip: '192.168.150.100', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cca5f2c84ea5e0d395cbf859528fbe23, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\visha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63782/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cca5f2c84ea5e0d395cbf859528fbe23
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
-at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:280)
-at org.CompassionOneView.testCases.BaseClass.tearDown(BaseClass.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'VISHAL', ip: '192.168.150.100', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: unknown
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-... 39 more
-Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'VISHAL', ip: '192.168.150.100', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: driver.version: unknown
-at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
-at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:114)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" started-at="2022-10-08T19:23:23 IST" name="tearDown" finished-at="2022-10-08T19:23:28 IST" duration-ms="5135" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[************************ Browser Session End ************************]]>
+            </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- org.CompassionOneView.testCases.CompassionOneViewChangeAll -->
+      </class> <!-- org.CompassionOneView.testCases.CompassionOneViewLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
