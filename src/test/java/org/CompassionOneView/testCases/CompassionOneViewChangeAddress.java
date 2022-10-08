@@ -11,9 +11,9 @@ import org.testng.annotations.Test;
 
 public class CompassionOneViewChangeAddress extends BaseClass{
 
-	@Parameters({"username","password"})
+	@Parameters({"username","password","SupporterId"})
 	@Test(groups = {"All","ChangeAddress"})
-	public void changeAddress (@Optional("GC_4") String username, @Optional("G33con0404") String password ) {
+	public void changeAddress (@Optional("GC_4") String username, @Optional("G33con0404") String password,@Optional("709401") String SupporterId ) {
 		try {
 		   System.out.println(">>>>>>>>>>>>>> START - CompassionOneViewChangeAddress <<<<<<<<<<<<<<<<<<<<");
 	        
@@ -48,7 +48,11 @@ public class CompassionOneViewChangeAddress extends BaseClass{
 	        Utilities.hardWait(5);
 	        driver.findElement(manageSupporter).click();
 	        
-	        Utilities.hardWait(5);
+	        Utilities.hardWait(3);
+	        driver.findElement(supporterID).clear();
+	        driver.findElement(supporterID).sendKeys(SupporterId);
+	        
+	      /*  Utilities.hardWait(5);
 	        String supporter_ID = driver.findElement(referSupporterID).getText();
 	        
 	        Utilities.hardWait(10);
@@ -59,7 +63,7 @@ public class CompassionOneViewChangeAddress extends BaseClass{
 	        Utilities.hardWait(5);
 	        a.sendKeys(supporter_ID).build().perform();
 	        Utilities.hardWait(4);
-	        
+	      */
 	        Utilities.hardWait(3);
 	        driver.findElement(searchButton).click();
 	        

@@ -12,9 +12,10 @@ import org.testng.annotations.Test;
 public class CompassionOneViewChangeName extends BaseClass {
 	
 
-	@Parameters({"username","password","firstname","surname"})
+	@Parameters({"username","password","firstname","surname","SupporterId"})
 	@Test(groups = {"All","ChangeName"})
-	public void changeName (@Optional("GC_4") String username, @Optional("G33con0404") String password, @Optional("David") String firstname, @Optional("Jackson") String surname ) {
+	public void changeName (@Optional("GC_4") String username, @Optional("G33con0404") String password, @Optional("David") String firstname,
+			                @Optional("Jackson") String surname, @Optional("709401") String SupporterId) {
 		try {
 		   System.out.println(">>>>>>>>>>>>>> START - CompassionOneViewChangeName <<<<<<<<<<<<<<<<<<<<");
 	        
@@ -48,7 +49,11 @@ public class CompassionOneViewChangeName extends BaseClass {
 	        Utilities.hardWait(5);
 	        driver.findElement(manageSupporter).click();
 	        
-	        Utilities.hardWait(5);
+	        Utilities.hardWait(3);
+	        driver.findElement(supporterID).clear();
+	        driver.findElement(supporterID).sendKeys(SupporterId);
+	        
+	      /*  Utilities.hardWait(5);
 	        String supporter_ID = driver.findElement(referSupporterID).getText();
 	        System.out.println(supporter_ID);
 	        Utilities.hardWait(10);
@@ -59,7 +64,7 @@ public class CompassionOneViewChangeName extends BaseClass {
 	        Utilities.hardWait(5);
 	        a.sendKeys(supporter_ID).build().perform();
 	        Utilities.hardWait(4);
-	        
+	      */  
 	        Utilities.hardWait(3);
 	        driver.findElement(searchButton).click();
 	        

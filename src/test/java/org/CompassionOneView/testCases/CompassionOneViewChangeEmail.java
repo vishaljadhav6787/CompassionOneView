@@ -10,9 +10,10 @@ import org.testng.annotations.Test;
 
 public class CompassionOneViewChangeEmail extends BaseClass{
 
-	@Parameters({"username","password","Email"})
+	@Parameters({"username","password","Email","SupporterId"})
 	@Test(groups = {"All","ChangeEmail"})
-	public void changeEmail (@Optional("GC_4") String username, @Optional("G33con0404") String password,@Optional("bettieheron1@gmail.com.invalid") String Email ) {
+	public void changeEmail (@Optional("GC_4") String username, @Optional("G33con0404") String password,@Optional("jackson123@gamil.com") String Email,
+			                 @Optional("709401") String SupporterId ) {
 		try {
 		   System.out.println(">>>>>>>>>>>>>> START - CompassionOneViewChangeEmail <<<<<<<<<<<<<<<<<<<<");
 	        
@@ -29,6 +30,7 @@ public class CompassionOneViewChangeEmail extends BaseClass{
 	        By changeEmail = By.xpath("(//div[@class='size-md float-left heading'])[4]");
 	        By eMail = By.id("email");
 	        By update = By.name("update");
+	        By updateConfirm=By.xpath("(//button[text()='Update'])[2]");
 	        By successfullyText = By.xpath("/html/body/div[3]/h2");
 	        By okButton = By.xpath("//button[text()='OK']");
 		   
@@ -43,7 +45,11 @@ public class CompassionOneViewChangeEmail extends BaseClass{
 	        Utilities.hardWait(5);
 	        driver.findElement(manageSupporter).click();
 	        
-	        Utilities.hardWait(5);
+	        Utilities.hardWait(3);
+	        driver.findElement(supporterID).clear();
+	        driver.findElement(supporterID).sendKeys(SupporterId);
+
+	     /*   Utilities.hardWait(5);
 	        String supporter_ID = driver.findElement(referSupporterID).getText();
 	        
 	        Utilities.hardWait(10);
@@ -54,7 +60,7 @@ public class CompassionOneViewChangeEmail extends BaseClass{
 	        Utilities.hardWait(5);
 	        a.sendKeys(supporter_ID).build().perform();
 	        Utilities.hardWait(4);
-	        
+	     */   
 	        Utilities.hardWait(3);
 	        driver.findElement(searchButton).click();
 	        
@@ -71,6 +77,9 @@ public class CompassionOneViewChangeEmail extends BaseClass{
 	        Utilities.hardWait(5);
 	        driver.findElement(update).click();
 	        
+	        Utilities.hardWait(4);
+	        driver.findElement(updateConfirm).click();
+	        	        
 	        Utilities.hardWait(5);
 	        String confirmationmessage = driver.findElement(successfullyText).getText();
 		    System.out.println(confirmationmessage);

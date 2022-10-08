@@ -13,9 +13,10 @@ import org.testng.annotations.Test;
 public class CompassionOneViewNewRegistration extends BaseClass {
 	
 
-	@Parameters({"username","password","firstname","surname","Email"})
+	@Parameters({"username","password","firstname","surname","Email","Username"})
 	@Test(groups = {"All","ChangeAddress"})
-	public void newRegistration (@Optional("GC_4") String username, @Optional("G33con0404") String password, @Optional("David") String firstname, @Optional("Jackson") String surname, @Optional("jackson123@gmail.com") String Email ) {
+	public void newRegistration (@Optional("GC_4") String username, @Optional("G33con0404") String password, @Optional("David") String Firstname, @Optional("Jackson") String Surname,
+			                     @Optional("jackson123@gmail.com") String Email,@Optional("davidjackson") String Username ) {
 		try {
 		   System.out.println(">>>>>>>>>>>>>> START - CompassionWebsitenewRegistration <<<<<<<<<<<<<<<<<<<<");
 	        
@@ -28,6 +29,7 @@ public class CompassionOneViewNewRegistration extends BaseClass {
 	        By title = By.id("title");
 	        By supporterId=By.id("supporterid");
 	        By userName = By.id("username");
+	        By lastName=By.id("lastname");
 	        By generatePassword=By.xpath("//button[@class='btn btn-primary generate_pswd']");
 	        By comPassword=By.id("confirmpassword");
 	        By submit=By.id("section2");
@@ -41,6 +43,7 @@ public class CompassionOneViewNewRegistration extends BaseClass {
 	        By eMailText=By.xpath("(//input[@class='nice-input'])");
 	        By registration=By.xpath("//button[text()='Register']");
 	        By deleteAccount=By.xpath("//a[@class='delete glyph-icon tooltip-button icon-remove']");
+	        By successfullyText=By.xpath("/html/body/div[4]/h2");
 	        By ConfirmDelete=By.xpath("//button[@class='confirm']");
 	        
 
@@ -69,11 +72,19 @@ public class CompassionOneViewNewRegistration extends BaseClass {
 		    Select drpTitle=new Select(dropTitle);
 		    drpTitle.selectByVisibleText("Mr");
 		    
+		    Utilities.hardWait(3);
+		    driver.findElement(firstName).clear();
+		    driver.findElement(firstName).sendKeys(Firstname);
+		    
+		    Utilities.hardWait(2);
+		    driver.findElement(lastName).clear();
+	        driver.findElement(lastName).sendKeys(Surname);
+		    
 		    Utilities.hardWait(4);
 	        String benificiary_ID = driver.findElement(supporterId).getAttribute("value");
 		    
 		    Utilities.hardWait(3);
-	        driver.findElement(userName).sendKeys("David Jackson");
+	        driver.findElement(userName).sendKeys(Username);
 	        
 	        Utilities.hardWait(3);
 	        driver.findElement(generatePassword).click();
@@ -96,9 +107,9 @@ public class CompassionOneViewNewRegistration extends BaseClass {
 	        a.sendKeys(benificiary_ID).build().perform();
 	        Utilities.hardWait(4);
 	        
-	        driver.findElement(firstName).sendKeys(firstname);
-	        driver.findElement(surName).sendKeys(surname);
-	        driver.findElement(user_name).sendKeys("David Jackson");
+	        driver.findElement(firstName).sendKeys(Firstname);
+	        driver.findElement(surName).sendKeys(Surname);
+	        driver.findElement(user_name).sendKeys(Username);
 	        driver.findElement(eMail).sendKeys(Email);
 	        
 	        Utilities.hardWait(4);
@@ -108,9 +119,16 @@ public class CompassionOneViewNewRegistration extends BaseClass {
 	        driver.findElement(deleteAccount).click();
 	        
 	        Utilities.hardWait(5);
+	        String confirmationmessage = driver.findElement(successfullyText).getText();
+		    System.out.println(confirmationmessage);
+	        	        	        
+	        Utilities.hardWait(5);
 	        driver.findElement(ConfirmDelete).click();
+	        
+	        driver.navigate().refresh()	;
 		    
 	        System.out.println(">>>>>>>>>>>>>>> END - CompassionWebsitenewRegistration <<<<<<<<<<<<<<<<<<<<");
+	        
 		}   catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

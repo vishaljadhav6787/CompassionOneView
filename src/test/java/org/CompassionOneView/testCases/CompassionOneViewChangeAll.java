@@ -11,17 +11,17 @@ import org.testng.annotations.Test;
 
 public class CompassionOneViewChangeAll extends BaseClass {
 	
-	@Parameters({"username","password","Email","firstname","lastname"})
+	
+	@Parameters({"username","password","Email","firstname","lastname","SupporterId"})
 	@Test(groups = {"All","ChangeAll"})
-	public void changeAll (@Optional("GC_4") String username, @Optional("G33con0404") String password,@Optional("bettieheron1@gmail.com.invalid") String Email,
-			@Optional("David") String firstname,@Optional("Jackson") String lastname) 
+	public void changeAll (@Optional("GC_4") String username, @Optional("G33con0404") String password,@Optional("jackson123@gmail.com") String Email,
+			@Optional("David") String firstname,@Optional("Jackson") String lastname,@Optional("709401") String SupporterId) 
 	
 	{
 		try {
 		   System.out.println(">>>>>>>>>>>>>> START - CompassionOneViewChangeAll <<<<<<<<<<<<<<<<<<<<");
 	        
 		   Actions a=new Actions(driver);
-	
 		    By byUsername = By.id("login-username");
 	        By byPassword = By.id("login-password");
 	        By bySignInButton = By.id("login");
@@ -46,6 +46,7 @@ public class CompassionOneViewChangeAll extends BaseClass {
 	        By mobilePhone = By.id("mobilephone");
 	        By eMail = By.id("email");
 	        By updateButton = By.name("update");//email
+	        By updateConfirm=By.xpath("(//button[text()='Update'])[2]");
 	        By successfullyText = By.xpath("/html/body/div[3]/h2");
 	        By okButton = By.xpath("//button[text()='OK']");
 		   
@@ -59,7 +60,11 @@ public class CompassionOneViewChangeAll extends BaseClass {
 	        Utilities.hardWait(5);
 	        driver.findElement(manageSupporter).click();
 	        
-	        Utilities.hardWait(5);
+	        Utilities.hardWait(3);
+	        driver.findElement(supporterID).clear();
+	        driver.findElement(supporterID).sendKeys(SupporterId);
+	        
+	     /*   Utilities.hardWait(5);
 	        String supporter_ID = driver.findElement(referSupporterID).getText();
 	        
 	        Utilities.hardWait(10);
@@ -70,7 +75,7 @@ public class CompassionOneViewChangeAll extends BaseClass {
 	        Utilities.hardWait(5);
 	        a.sendKeys(supporter_ID).build().perform();
 	        Utilities.hardWait(4);
-	        
+	     */   
 	        Utilities.hardWait(3);
 	        driver.findElement(searchButton).click();
 	        
@@ -149,6 +154,9 @@ public class CompassionOneViewChangeAll extends BaseClass {
 	       
 	        Utilities.hardWait(5);
 	        driver.findElement(updateButton).click();
+	        
+	        Utilities.hardWait(4);
+	        driver.findElement(updateConfirm).click();
 	        
 	        Utilities.hardWait(5);
 	        String successfullymessage = driver.findElement(successfullyText).getText();
