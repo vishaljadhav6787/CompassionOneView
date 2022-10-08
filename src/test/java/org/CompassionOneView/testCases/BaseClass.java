@@ -32,7 +32,7 @@ public class BaseClass {
 		try {
 			
 			Reporter.log("************************ Browser Session Started ************************", true);
-			WebDriverManager.chromedriver().setup();
+//			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 
 //		  To Handle Chrome Browser Crashes in server
@@ -41,6 +41,7 @@ public class BaseClass {
 			options.addArguments("--disable-dev-shm-usage"); //should be enabled for Jenkins
 			options.addArguments("--window-size=1920x1080"); //should be enabled for Jenkinss
 			System.out.println("Baseclass:35" + Objects.isNull(driver));
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\visha\\OneDrive\\Desktop\\Driver\\chromedriver.exe");
 			driver = new ChromeDriver(options);
 			System.out.println("Baseclass:38" + Objects.isNull(driver));
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
