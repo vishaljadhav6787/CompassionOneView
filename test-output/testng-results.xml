@@ -8,7 +8,7 @@
       <![CDATA[************************ Browser Session End ************************]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-10-08T19:48:52 IST" name="Default suite" finished-at="2022-10-08T19:49:10 IST" duration-ms="18248">
+  <suite started-at="2022-10-08T19:55:55 IST" name="Default suite" finished-at="2022-10-08T19:56:11 IST" duration-ms="16161">
     <groups>
       <group name="All">
         <method signature="CompassionOneViewLogin.loginTest(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" name="loginTest" class="org.CompassionOneView.testCases.CompassionOneViewLogin"/>
@@ -17,9 +17,9 @@
         <method signature="CompassionOneViewLogin.loginTest(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" name="loginTest" class="org.CompassionOneView.testCases.CompassionOneViewLogin"/>
       </group> <!-- Login -->
     </groups>
-    <test started-at="2022-10-08T19:48:52 IST" name="Default test" finished-at="2022-10-08T19:49:10 IST" duration-ms="18248">
+    <test started-at="2022-10-08T19:55:55 IST" name="Default test" finished-at="2022-10-08T19:56:11 IST" duration-ms="16161">
       <class name="org.CompassionOneView.testCases.CompassionOneViewLogin">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" started-at="2022-10-08T19:48:52 IST" name="setup" finished-at="2022-10-08T19:48:59 IST" duration-ms="6917" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" started-at="2022-10-08T19:55:55 IST" name="setup" finished-at="2022-10-08T19:55:59 IST" duration-ms="4821" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" started-at="2022-10-08T19:48:59 IST" name="loginTest" finished-at="2022-10-08T19:49:05 IST" duration-ms="6158" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" started-at="2022-10-08T19:55:59 IST" name="loginTest" finished-at="2022-10-08T19:56:06 IST" duration-ms="6162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" started-at="2022-10-08T19:49:05 IST" name="tearDown" finished-at="2022-10-08T19:49:10 IST" duration-ms="5133" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.CompassionOneView.testCases.CompassionOneViewLogin@6f1de4c7]" started-at="2022-10-08T19:56:06 IST" name="tearDown" finished-at="2022-10-08T19:56:11 IST" duration-ms="5139" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[************************ Browser Session End ************************]]>
